@@ -1,3 +1,5 @@
+@import "./variblesColor";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
 @import "./components/index.scss";
 * {
   margin: 0;
@@ -19,23 +21,55 @@ h6 {
   font-style: inherit;
 }
 
-[class*="_conatiner"] {
+[class*="container"] {
   max-width: 1220px;
+  width: 100%;
   margin: 0 auto;
-  @media screen and (max-width: 976.98px) {
-    max-width: 980px;
-  }
-  @media screen and (max-width: 600.98px) {
+  padding: 0 20px;
+  @media screen and (max-width: 979.68px) {
     max-width: inherit;
-    padding: 0 20px;
+    width: inherit;
   }
 }
 
+$mainColor: #e5e5e5;
+$bgContent: #f3f4f6;
+$btnColor: #4f46e5;
+$btnColorActive: #716bf2;
+
 a {
   text-decoration: none;
+  color: #000;
 }
 
 ul,
 li {
   list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  height: 45px;
+  width: 210px;
+  border-radius: 5px;
+  background-color: $btnColor;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    background-color: $btnColorActive;
+  }
+  &-outline {
+    background: transparent;
+    border: 2px solid $btnColor;
+    color: $btnColor;
+    &:hover {
+      background-color: $btnColor;
+      color: #fff;
+    }
+  }
 }
