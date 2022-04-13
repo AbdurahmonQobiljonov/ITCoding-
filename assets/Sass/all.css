@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+[class*="_conatiner"] {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 976.98px) {
+  [class*="_conatiner"] {
+    max-width: 980px;
+  }
+}
+
+@media screen and (max-width: 600.98px) {
+  [class*="_conatiner"] {
+    max-width: inherit;
+    padding: 0 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=all.css.map */
