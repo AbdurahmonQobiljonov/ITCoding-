@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  background-color: #f9fafb;
+}
+
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header_logo {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.header .navbar_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar_item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.header .navbar_link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.header_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.header_login-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_login p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 978.98px) {
+  .navbar_nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

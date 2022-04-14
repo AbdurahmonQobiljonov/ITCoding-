@@ -1,0 +1,95 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f9fafb;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &_logo {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  .navbar {
+    &_menu {
+      display: flex;
+    }
+
+    &_item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+
+    &_link {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+
+  &_login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-in {
+      display: flex;
+      align-items: center;
+    }
+    p {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 978.98px) {
+  .navbar {
+    &_nav {
+      display: none;
+    }
+
+    &_menu {
+    }
+
+    &_item {
+    }
+
+    &_link {
+    }
+  }
+  .header {
+    &_container {
+    }
+
+    &_logo {
+    }
+
+    &_login {
+    }
+
+    &_login-in {
+    }
+
+    &_login-btn {
+    }
+  }
+
+  .btn {
+  }
+  .btn-outline {
+  }
+}
