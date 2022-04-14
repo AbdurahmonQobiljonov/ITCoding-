@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .CharacterContent{
-    margin-top: 500px;
-    margin-left: 500px;
+    margin-top: 400px;
+    margin-left: 400px;
     padding: 30px;
     position: relative;
     width: 288px;
@@ -17,17 +19,17 @@
 }
 
 .characterName{
+    font-family: 'Inter';
     width: 50%;
     margin: 70px auto 0 auto;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
 }
 
 .characterInfo{
-    margin-top: 20px;
     font-family: 'Inter';
+    margin-top: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -35,7 +37,7 @@
 }
 
 .characterDescription{
-    width: 75%;
+    width: 80%;
     margin: 20px auto 0 auto;
     font-family: 'Inter';
     font-style: normal;
@@ -45,9 +47,9 @@
 }
 
 .characterMail{
+    font-family: 'Inter';
     margin-top: 20px;
     text-decoration: none;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
