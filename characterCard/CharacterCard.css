@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.CharacterContent{
+    margin-top: 400px;
+    margin-left: 400px;
+    padding: 30px;
+    position: relative;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8FF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.characterName{
+    font-family: 'Inter';
+    width: 50%;
+    margin: 70px auto 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.characterInfo{
+    font-family: 'Inter';
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #898989;
+}
+
+.characterDescription{
+    width: 80%;
+    margin: 20px auto 0 auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}
+
+.characterMail{
+    font-family: 'Inter';
+    margin-top: 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+}
+
+.characterAvatar{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 15px solid #F8F8FF;
+}

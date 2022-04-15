@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 288px;
+    background-color: #F8F8FF;
+    border-radius: 0 0 5px 5px;
+
+}
+.card-content{
+    padding: 30px;
+}
+
+.cardImage{
+    width: 100%;
+    height: 190px;
+}
+
+.CardTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 21px;
+}
+.InfoContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.InfoContent li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
