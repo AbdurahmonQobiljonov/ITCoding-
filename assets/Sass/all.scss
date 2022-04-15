@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
 }
 *::before,
 *::after {
@@ -31,11 +32,6 @@ h6 {
     width: inherit;
   }
 }
-
-$mainColor: #e5e5e5;
-$bgContent: #f3f4f6;
-$btnColor: #4f46e5;
-$btnColorActive: #716bf2;
 
 a {
   text-decoration: none;
@@ -70,6 +66,49 @@ li {
     &:hover {
       background-color: $btnColor;
       color: #fff;
+    }
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    transform: translateY(-9px);
+    transition: 0.3s ease-in;
+  }
+  &::after {
+    transform: translateY(9px);
+  }
+  span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    transition: 0.2s ease-in;
+  }
+
+  &.active {
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    span {
+      transform: translateX(150px);
     }
   }
 }

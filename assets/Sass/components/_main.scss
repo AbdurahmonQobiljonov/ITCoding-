@@ -1,0 +1,39 @@
+.main {
+  background: linear-gradient(
+      rgba($color: #000000, $alpha: 0.8),
+      rgba($color: #000000, $alpha: 0.8)
+    ),
+    url("https://s3-alpha-sig.figma.com/img/154e/c5ba/432d43d42533329e1b6122cfeec926ff?Expires=1650844800&Signature=Q8o8IpcUgvl6gHpop79vNpmQkpd6n4B~IIZpLd87emeApv2xNSt2cWS~CnzgM2bC8Wl7eGBqZtIrThLAEfD~A6VDq95Zvfc5euySUkYciB1-j-JdtfulK40tAVU2rgkEQqwpofikHuPP~0exD45MZBW2Hj7yK6h45XX5rBa83LdlVehC711v2DRck-IVPNq2eQbdn2SmDq6EpkOQDaeOcYAAwurrXK91U8~WYKuyNP5Gfmg4P96zPNpl4~SGzO1Ucm0P7a3TkCLkyGYwo~XLTqeHiB65YOulq3-I7GZIfh5NxJGAel~gpema8cL8fALYVRXRgZo~18ySs3G3D8TT4Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+
+  margin-top: 100px;
+  &_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &_content {
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 676.98px) {
+    &_container {
+      justify-content: center;
+    }
+    &_content {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 569.98px) {
+    &_content {
+      font-size: 2.5rem;
+    }
+  }
+}
