@@ -20,6 +20,7 @@ h5,
 h6 {
   font-weight: inherit;
   font-style: inherit;
+  font-size: inherit;
 }
 
 [class*="container"] {
@@ -111,4 +112,10 @@ li {
       transform: translateX(150px);
     }
   }
+}
+
+.text_header {
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: uppercase;
 }

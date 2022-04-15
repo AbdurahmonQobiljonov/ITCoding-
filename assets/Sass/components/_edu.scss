@@ -1,0 +1,36 @@
+.edu {
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+  &_types {
+    width: 288px;
+    border-radius: 10px;
+    background-color: rgba(248, 248, 255, 1);
+    cursor: pointer;
+    transition: 0.2s;
+    &_header {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &_main {
+      margin: 30px 0 30px 30px;
+      h4 {
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 21px;
+      }
+      p {
+        margin: 7px 0;
+      }
+    }
+    &:hover {
+      background-color: $btnColor;
+      color: #fff;
+    }
+  }
+}
