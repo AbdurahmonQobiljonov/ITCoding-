@@ -56,7 +56,7 @@ li {
   width: 210px;
   border-radius: 5px;
   background-color: $btnColor;
-  transition: 0.1s ease-in-out;
+  transition: 0.2s ease-in-out;
   &:hover {
     background-color: $btnColorActive;
   }
@@ -64,6 +64,15 @@ li {
     background: transparent;
     border: 2px solid $btnColor;
     color: $btnColor;
+    &-light {
+      border: 2px solid #fff;
+      background: transparent;
+
+      &:hover {
+        background-color: #fff;
+        color: $btnColor;
+      }
+    }
     &:hover {
       background-color: $btnColor;
       color: #fff;
@@ -92,21 +101,15 @@ li {
   }
   &::after {
     transform: translateY(9px);
+    box-shadow: 0 -9px 0 black;
   }
-  span {
-    width: 30px;
-    height: 3px;
-    position: absolute;
-    background-color: #000;
-    transition: 0.2s ease-in;
-  }
-
   &.active {
     &::before {
       transform: rotate(45deg);
     }
     &::after {
       transform: rotate(-45deg);
+      box-shadow: 0 0 0 black;
     }
     span {
       transform: translateX(150px);
@@ -118,4 +121,7 @@ li {
   font-weight: 600;
   font-size: 27px;
   text-transform: uppercase;
+  @media screen and (max-width: 444px) {
+    text-align: center;
+  }
 }

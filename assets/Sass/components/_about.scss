@@ -9,8 +9,6 @@
   &_content-text {
     margin-right: 20px;
     h1 {
-      font-weight: 600;
-      font-size: 27px;
       margin-bottom: 20px;
     }
     P {
@@ -42,13 +40,8 @@
     &_content-video {
       height: 350px;
       video {
-        width: 450px;
+        width: 370px;
       }
-    }
-  }
-  @media screen and (max-width: 445.98px) {
-    &_content-video {
-      width: 370px;
     }
   }
 }
