@@ -1,0 +1,158 @@
+@import "./variblesColor";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+@import "./components/index.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  scroll-behavior: smooth;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+
+[class*="container"] {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (max-width: 979.68px) {
+    max-width: inherit;
+    width: inherit;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  height: 45px;
+  width: 210px;
+  border-radius: 5px;
+  background-color: $btnColor;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: $btnColorActive;
+  }
+  &-outline {
+    background: transparent;
+    border: 2px solid $btnColor;
+    color: $btnColor;
+    &-light {
+      border: 2px solid #fff;
+      background: transparent;
+
+      &:hover {
+        background-color: #fff;
+        color: $btnColor;
+      }
+    }
+    &:hover {
+      background-color: $btnColor;
+      color: #fff;
+    }
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    transform: translateY(-9px);
+    transition: 0.3s ease-in;
+  }
+  &::after {
+    transform: translateY(9px);
+    box-shadow: 0 -9px 0 black;
+  }
+  &.active {
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+      box-shadow: 0 0 0 black;
+    }
+    span {
+      transform: translateX(150px);
+    }
+  }
+}
+
+.text_header {
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: uppercase;
+  @media screen and (max-width: 444px) {
+    text-align: center;
+  }
+}
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box_btn {
+  position: absolute;
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    border: inset 5px solid #fff;
+    background-color: red;
+    cursor: pointer;
+  }
+  p {
+    z-index: 1;
+    font-weight: 800;
+    position: absolute;
+    bottom: 15px;
+    color: cadetblue;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+}

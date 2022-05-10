@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  z-index: 100;
+  background-color: #fff;
+  transition: height 0.4s;
+  &.active {
+    height: 80px;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  &_logo {
+    z-index: 100;
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  .navbar {
+    &_nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_menu {
+      display: flex;
+    }
+
+    &_item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+
+    &_link {
+      position: relative;
+
+      font-weight: 400;
+      font-size: 17px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        width: 0;
+        height: 3px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.169);
+
+        transition: 0.3s;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &_login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 140px;
+    &-in {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    p {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100.98px) {
+  .burger {
+    display: flex !important;
+  }
+
+  .navbar {
+    &_nav {
+      flex-direction: column;
+      justify-content: center !important;
+    }
+
+    &_menu {
+      flex-direction: column;
+    }
+
+    &_item {
+      text-align: center;
+      margin: 10px !important;
+    }
+
+    &_link {
+      font-size: 1.5rem !important;
+    }
+  }
+  .header {
+    &_controll {
+      display: flex;
+      justify-content: center;
+      align-items: initial;
+      position: fixed;
+      top: -200%;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: auto;
+      background-color: $bgContent;
+      transition: top 0.5s;
+      z-index: -100;
+    }
+    .active {
+      top: 0%;
+    }
+
+    &_login {
+      flex-direction: column;
+      margin: 15px 0;
+    }
+
+    &_login-in {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
