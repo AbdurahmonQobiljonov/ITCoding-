@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import { CountUp } from "use-count-up";
+import { useState, useEffect } from 'react';
+import { CountUp } from 'use-count-up';
 
 const CountUps = (cnt) => {
-  const [first, setfirst] = useState(false);
+  const [first, setFirst] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setfirst(true);
+    window.addEventListener('scroll', () => {
+      setFirst(true);
     });
   }, []);
 

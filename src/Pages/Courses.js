@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const courses = () => {
-  return <div style={{ height: "100vh" }}>courses</div>;
+  return <div style={{ height: '100vh' }}>courses</div>;
 };
 
 export default courses;

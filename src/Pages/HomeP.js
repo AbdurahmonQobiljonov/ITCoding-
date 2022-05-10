@@ -1,11 +1,4 @@
-import {
-  ItcNumber,
-  Main,
-  About,
-  Edu,
-  Contact,
-  Charackter,
-} from "../components";
+import { ItcNumber, Main, About, Edu, Contact, Charackter } from '../components';
 const HomeP = () => {
   return (
     <>
