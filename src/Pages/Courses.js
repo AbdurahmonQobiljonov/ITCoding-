@@ -1,7 +1,7 @@
 import React from "react";
-
+import { Main } from "../components";
 const courses = () => {
-  return <div style={{ height: "100vh" }}>courses</div>;
+  return <Main />;
 };
 
 export default courses;

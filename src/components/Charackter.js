@@ -42,9 +42,9 @@ const Charackter = () => {
       phoneN: "+99890 777-77-77",
     },
     {
-      firstName: "Abduvaliyev",
-      secondName: "Asadillo",
-      skill: "Front-end kursi o‘qituvchisi",
+      firstName: "Qobiljonov",
+      secondName: "Abdurahmon",
+      skill: "Js engineer kursi o‘qituvchisi",
       userImg: "../../../img/122.jfif",
       description:
         "3 yildan ko‘proq Frontend kurslaridan o‘quvchilarga dars berib kelmoqda",
