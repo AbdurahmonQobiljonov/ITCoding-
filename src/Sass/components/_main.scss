@@ -1,10 +1,4 @@
 .main {
-  background: linear-gradient(
-      rgba($color: #000000, $alpha: 0.8),
-      rgba($color: #000000, $alpha: 0.8)
-    ),
-    url("../../../public/img/homeBg.png");
-
   &.second {
     background: linear-gradient(
         rgba($color: #000000, $alpha: 0.8),
@@ -14,18 +8,18 @@
   }
 
   &.three {
-    background: linear-gradient(
-        rgba($color: #000000, $alpha: 0.8),
-        rgba($color: #000000, $alpha: 0.8)
-      ),
-      url("../../../public/img/3slide.jpg");
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(
+                    rgba($color: #000000, $alpha: 0.8),
+                    rgba($color: #000000, $alpha: 0.8)
+    ) url("../../../public/img/3slide.jpg") no-repeat center;
   }
-  background-position: center;
+
   background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+                  rgba($color: #000000, $alpha: 0.8),
+                  rgba($color: #000000, $alpha: 0.8)
+  ) url("../../../public/img/homeBg.png") no-repeat center;
   width: 100%;
   height: 550px;
 
