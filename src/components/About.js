@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
         <div className="about_content-video">
-          <video src="../../../img/iTcodding.mp4" autoPlay muted loop></video>
+          <video src={"../../../img/iTcodding.mp4"} autoPlay muted loop></video>
         </div>
       </div>
     </section>
