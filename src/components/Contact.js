@@ -1,4 +1,4 @@
-const Conatct = () => {
+const Contact = () => {
   return (
     <section className="contact_us">
       <div className="contact_container">
@@ -14,4 +14,4 @@ const Conatct = () => {
   );
 };
 
-export default Conatct;
+export default Contact;

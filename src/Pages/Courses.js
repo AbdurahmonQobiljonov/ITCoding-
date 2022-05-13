@@ -1,7 +1,7 @@
 import React from "react";
-import { Main } from "../components";
-const courses = () => {
-  return <Main />;
+import { CoursesPageCom } from "../components";
+const Courses = () => {
+  return <CoursesPageCom />;
 };
 
-export default courses;
+export default Courses;

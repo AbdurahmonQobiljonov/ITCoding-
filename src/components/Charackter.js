@@ -1,15 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 
 const Charackter = () => {
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-  };
-
   let users = [
     {
       firstName: "Asrbek",
@@ -76,18 +67,18 @@ const Charackter = () => {
               <div className="character_overlay">
                 <div className="character_social">
                   <div className="character_social_icon">
-                    <i class="bx bxl-telegram"></i>
+                    <i className="bx bxl-telegram" />
                     <a
                       href="https://github.com/AsrbekCoder"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i class="bx bxl-github"></i>
+                      <i className="bx bxl-github" />
                     </a>
-                    <i class="bx bxl-facebook-circle"></i>
+                    <i className="bx bxl-facebook-circle" />
                   </div>
                   <div className="character_social_number">
-                    <i class="bx bxs-phone"></i>
+                    <i className="bx bxs-phone" />
                     <a href={`tel:${item.phoneN}`}>{item.phoneN}</a>
                   </div>
                 </div>

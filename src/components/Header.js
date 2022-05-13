@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const linksAll = [
+  { main: "Bosh Sahifa", path: "/" },
+  { main: "Kurslar", path: "courses" },
+  { main: "O‘qituvchilar", path: "/" },
+  { main: "Bog'lanish", path: "/" },
+];
+
 const Header = () => {
   const [first, setfirst] = React.useState(false);
   return (
@@ -15,26 +22,17 @@ const Header = () => {
         >
           <nav className="navbar_nav">
             <ul className="navbar_menu">
-              <li className="navbar_item">
-                <Link to="/" className="navbar_link">
-                  Biz haqimizda
-                </Link>
-              </li>
-              <li className="navbar_item">
-                <Link to="courses" className="navbar_link">
-                  Kurslar
-                </Link>
-              </li>
-              <li className="navbar_item">
-                <a href="#a" className="navbar_link">
-                  O‘qituvchilar
-                </a>
-              </li>
-              <li className="navbar_item">
-                <a href="#a" className="navbar_link">
-                  Aloqa
-                </a>
-              </li>
+              {linksAll.map((e, idx) => (
+                <li className="navbar_item" key={idx * 2}>
+                  <Link
+                    to={e.path}
+                    className="navbar_link"
+                    onClick={() => setfirst(false)}
+                  >
+                    {e.main}
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             <div className="header_login">

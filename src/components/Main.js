@@ -6,7 +6,7 @@ const Main = () => {
     <Carousel
       autoPlay={true}
       autoFocus={true}
-      emulateTouch={true}
+      emulateTouch={false}
       infiniteLoop={true}
       useKeyboardArrows={true}
       interval={5000}
