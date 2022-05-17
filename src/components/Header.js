@@ -9,7 +9,7 @@ const linksAll = [
 ];
 
 const Header = () => {
-  const [first, setfirst] = React.useState(false);
+  const [first, setFirst] = React.useState(false);
   return (
     <header className="header" id="header">
       <div className="header_container">
@@ -27,7 +27,7 @@ const Header = () => {
                   <Link
                     to={e.path}
                     className="navbar_link"
-                    onClick={() => setfirst(false)}
+                    onClick={() => setFirst(false)}
                   >
                     {e.main}
                   </Link>
@@ -72,7 +72,7 @@ const Header = () => {
         <div
           className={first ? "burger active" : "burger"}
           id="burger"
-          onClick={() => setfirst(() => !first)}
+          onClick={() => setFirst(() => !first)}
         ></div>
       </div>
     </header>

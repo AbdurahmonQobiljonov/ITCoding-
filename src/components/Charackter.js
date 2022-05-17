@@ -1,5 +1,4 @@
 import React from "react";
-
 const Charackter = () => {
   let users = [
     {
@@ -67,18 +66,18 @@ const Charackter = () => {
               <div className="character_overlay">
                 <div className="character_social">
                   <div className="character_social_icon">
-                    <i className="bx bxl-telegram" />
+                    <i className="bx bxl-telegram"></i>
                     <a
                       href="https://github.com/AsrbekCoder"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="bx bxl-github" />
+                      <i className="bx bxl-github"></i>
                     </a>
-                    <i className="bx bxl-facebook-circle" />
+                    <i className="bx bxl-facebook-circle"></i>
                   </div>
                   <div className="character_social_number">
-                    <i className="bx bxs-phone" />
+                    <i className="bx bxs-phone"></i>
                     <a href={`tel:${item.phoneN}`}>{item.phoneN}</a>
                   </div>
                 </div>
