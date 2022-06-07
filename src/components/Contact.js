@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <section className="contact_us">
@@ -7,7 +9,9 @@ const Contact = () => {
         </h2>
         <div className="btn_box">
           <button className="btn">Kursga yozilish</button>
-          <button className="btn btn-outline-light">Batafsil</button>
+          <Link to="courses" className="btn btn-outline-light">
+            Batafsil
+          </Link>
         </div>
       </div>
     </section>

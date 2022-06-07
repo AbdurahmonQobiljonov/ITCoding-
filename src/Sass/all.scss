@@ -58,6 +58,8 @@ li {
   border-radius: 5px;
   background-color: $btnColor;
   transition: 0.2s ease-in-out;
+  text-align: center;
+  line-height: 45px;
   &:hover {
     background-color: $btnColorActive;
   }

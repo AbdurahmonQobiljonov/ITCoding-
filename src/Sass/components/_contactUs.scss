@@ -1,6 +1,9 @@
 .contact {
   &_us {
-    background: linear-gradient(rgba(29, 42, 70, 0.8), rgba(23, 36, 66, 0.8)) url(https://s3-alpha-sig.figma.com/img/a097/99a8/8305613c0bc1ba28f1cbce77215e77ca?Expires=1651449600&Signature=UP862v0CJy7M4sNU5EwQJYLpQNM6blFONRMns7VaiYUH-XVh-qWZjVW3BeXfh6Ex9mFujuVFW3ktV02aBs4Ly7JU7ue7goxU6xgOcypzRCC-dtCW5tYcwIp75uO23UMlRAlkm4wpTqBwROD2UnbXNscXC5cdlkuZnwCQ9FJHVX-MvekE8aD8javhKBrmSspzZKVbMN3pGmb-IHqdDlV8F7sJ49jQ-bN8DWusy1wfNo-3H~kQnpImPQrTeKA7-moUvReD20n4P8lvCLxEzKVAYZNDPctCecdU0wEfP5RP6Sx~osPgApRiy17D5ebVgNK0mFT1lP1gZGRYDw66NphEsw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA) no-repeat center;
+    background: linear-gradient(rgba(29, 42, 70, 0.8), rgba(23, 36, 66, 0.8)),
+      url("https://s3-alpha-sig.figma.com/img/a097/99a8/8305613c0bc1ba28f1cbce77215e77ca?Expires=1655683200&Signature=RG3ihMJlaidbkhiiMO-bceOm2zN2RsMDXvNY8EBiLcR8ymZcJt-OGFc93nNoQ4F0sBvBo8Vrhe9WSXz~z6Rkv0oND3aJ6e8WwEtEfLdu27gKPryxq4F2tWbMR-kuQvj-2b5Dy1lCVei5XdDYqEizbgR4lGRzJI9M3HYs-IXAewDFFcoSPrLqz9MadLey8ZZSkz2jrUFYNzq9KEfa-VajwCb6-XPTjxRgC5k9VXXvFokdpo1u~gsIjxz6an~piDINLK8N-jCrFdDwp0v1aISwZ5Emvng5j0Y4MfQkF2HYY7-hGD0~0JvsIAiDLQtDTJtHQs73X1WHMXLWP~IircP7ZA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     margin: 100px 0;
   }
