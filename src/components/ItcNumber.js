@@ -1,5 +1,5 @@
-import React from 'react';
-import CountUps from '../Helper/CountUp';
+import React from "react";
+import CountUps from "../Helper/CountUp";
 const ItcNumber = () => {
   return (
     <section className="itnumbers">

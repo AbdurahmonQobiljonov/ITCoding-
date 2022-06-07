@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -42,7 +42,9 @@ const Footer = () => {
           </div>
 
           <div className="footer_condition">
-            <p>© 2022. ITCODDING. All rights reserved. Design by Begmatov Bekzod</p>
+            <p>
+              © 2022. ITCODDING. All rights reserved. Design by Begmatov Bekzod
+            </p>
           </div>
         </div>
       </div>

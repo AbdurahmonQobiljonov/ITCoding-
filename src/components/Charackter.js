@@ -1,42 +1,35 @@
-import React from 'react';
-import Slider from 'react-slick';
-
+import React from "react";
 const Charackter = () => {
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-  };
-
   let users = [
     {
-      firstName: 'Asrbek',
-      secondName: 'Suvanov',
-      skill: 'Full Stack kursi o‘qituvchisi',
-      userImg: '../../../img/122.jfif',
-      description: '3 yildan ko‘proq Full Stack kurslaridan o‘quvchilarga dars berib kelmoqda',
-      email: 'itcodding@gmail.com',
-      phoneN: '+99890 517-30-07',
+      firstName: "Asrbek",
+      secondName: "Suvanov",
+      skill: "Full Stack kursi o‘qituvchisi",
+      userImg: "../../../img/122.jfif",
+      description:
+        "3 yildan ko‘proq Full Stack kurslaridan o‘quvchilarga dars berib kelmoqda",
+      email: "itcodding@gmail.com",
+      phoneN: "+99890 517-30-07",
     },
     {
-      firstName: 'Abduvaliyev',
-      secondName: 'Asadillo',
-      userImg: '../../../img/122.jfif',
-      skill: 'Front-end kursi o‘qituvchisi',
-      description: '3 yildan ko‘proq Frontend kurslaridan o‘quvchilarga dars berib kelmoqda',
-      email: 'itcodding@gmail.com',
-      phoneN: '+99890 777-77-77',
+      firstName: "Abduvaliyev",
+      secondName: "Asadillo",
+      userImg: "../../../img/122.jfif",
+      skill: "Front-end kursi o‘qituvchisi",
+      description:
+        "3 yildan ko‘proq Frontend kurslaridan o‘quvchilarga dars berib kelmoqda",
+      email: "itcodding@gmail.com",
+      phoneN: "+99890 777-77-77",
     },
     {
-      firstName: 'Begmatov',
-      secondName: 'Bekzod',
-      skill: 'WEB & UX/UI dizayner',
-      userImg: '../../../img/122.jfif',
-      description: '1 yildan ko‘proq Web dizayn hamda UX/UI dizayn sohasida real loyihalar ustida ishlab kelmoqda',
-      email: 'itcodding@gmail.com',
-      phoneN: '+99890 777-77-77',
+      firstName: "Begmatov",
+      secondName: "Bekzod",
+      skill: "WEB & UX/UI dizayner",
+      userImg: "../../../img/122.jfif",
+      description:
+        "1 yildan ko‘proq Web dizayn hamda UX/UI dizayn sohasida real loyihalar ustida ishlab kelmoqda",
+      email: "itcodding@gmail.com",
+      phoneN: "+99890 777-77-77",
     },
     {
       firstName: "Qobiljonov",
@@ -74,7 +67,11 @@ const Charackter = () => {
                 <div className="character_social">
                   <div className="character_social_icon">
                     <i className="bx bxl-telegram"></i>
-                    <a href="https://github.com/AsrbekCoder" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/AsrbekCoder"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="bx bxl-github"></i>
                     </a>
                     <i className="bx bxl-facebook-circle"></i>
