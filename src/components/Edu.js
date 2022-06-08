@@ -1,24 +1,8 @@
 import React from "react";
 import DateConverter from "../Helper/DateConverter";
 import EduCoverter from "../Helper/EduCoverter";
-import Api from "../server/Api";
 
-const Edu = () => {
-  const [corses, setCorses] = React.useState([]);
-
-  React.useEffect(() => {
-    const fetch = async () => {
-      try {
-        await new Api()
-          .coursesApi("courses")
-          .then(({ data }) => setCorses(data));
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetch();
-  }, []);
+const Edu = ({ corses }) => {
   return (
     <section className="edu_container">
       <div className="text_header">
@@ -26,7 +10,7 @@ const Edu = () => {
       </div>
       <div className="edu_box">
         {corses &&
-          corses.slice(0, 4).map((item, idx) => (
+          corses.slice(0, 6).map((item, idx) => (
             <div className="edu_types" key={idx}>
               <div className="edu_types_header">
                 <img

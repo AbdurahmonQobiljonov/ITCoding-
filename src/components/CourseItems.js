@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DateConverter from "../Helper/DateConverter";
 
 const CourseItems = ({
@@ -8,6 +9,7 @@ const CourseItems = ({
   courseType,
   diskription,
   duration,
+  pathName,
   rate,
   students,
 }) => {
@@ -40,7 +42,9 @@ const CourseItems = ({
         <hr className="hr" />
         <div className="chiziq-vertical"></div>
         <div className="courses-links">
-          <div className="courses-link_2">Batafsil ko'rish</div>
+          <Link to={`course/${pathName}`}>
+            <div className="courses-link_2">Batafsil ko'rish</div>
+          </Link>
         </div>
       </div>
     </div>

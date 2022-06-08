@@ -6,14 +6,14 @@ import {
   Contact,
   Charackter,
 } from "../components";
-const HomeP = () => {
+const HomeP = ({ corses }) => {
   return (
     <>
       <Main />
       <div id="about"></div>
       <About />
       <ItcNumber />
-      <Edu />
+      <Edu corses={corses} />
       <Contact />
       <Charackter />
     </>

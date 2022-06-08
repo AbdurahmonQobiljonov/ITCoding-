@@ -1,28 +1,12 @@
 import React from "react";
-import Api from "../server/Api";
 import CourseItems from "./CourseItems";
 
-const CoursesPageCom = () => {
+const CoursesPageCom = ({ corses }) => {
   const [first, setFirst] = React.useState(false);
-  const [corses, setCorses] = React.useState([]);
   const [filterCorses, setFilterCorses] = React.useState("");
 
-  React.useEffect(() => {
-    const fetch = async () => {
-      try {
-        await new Api()
-          .coursesApi("courses")
-          .then(({ data }) => setCorses(data));
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetch();
-  }, []);
-
   const coursesFiltered = corses.filter((item) =>
-    item.courseName.toLowerCase().includes(filterCorses.toLocaleLowerCase())
+    item.courseName.toLowerCase().includes(filterCorses.toLowerCase())
   );
   return (
     <div className="courses_type_container">
@@ -109,7 +93,7 @@ const CoursesPageCom = () => {
                 <div className="search__input-row">
                   <i className="bx bx-search-alt-2"></i>
                   <input
-                    type="text"
+                    type="search"
                     className="search-input"
                     placeholder="Saytdan qidirish..."
                     value={filterCorses}

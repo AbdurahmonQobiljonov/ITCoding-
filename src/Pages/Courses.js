@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { CoursesPageCom } from "../components";
-const Courses = () => {
+const Courses = ({ corses }) => {
   return (
     <>
       <main className="courses">
@@ -17,7 +17,7 @@ const Courses = () => {
           </p>
         </div>
       </main>
-      <CoursesPageCom />;
+      <CoursesPageCom corses={corses} />;
     </>
   );
 };
