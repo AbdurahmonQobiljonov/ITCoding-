@@ -6,7 +6,7 @@ import Edu from "./Edu";
 import Contact from "./Contact";
 import Charackter from "./Charackter";
 import Footer from "./Footer";
-import CoursesPageCom from "./CoursesPageCom";
+import CoursesPageCom from "./CoursePage/CoursesPageCom";
 
 export {
   Header,

@@ -1,0 +1,86 @@
+.auth {
+  &_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  &_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(#000, 0.1);
+    max-width: 980px;
+    width: 100%;
+    height: 500px;
+  }
+  &_left {
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .input {
+        font-size: 16px;
+        height: 45px;
+        border: none;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        width: 280px;
+        box-sizing: border-box;
+        margin: 5px 0;
+        transition: all 0.3s linear;
+        color: #000;
+        font-weight: 400;
+        &:focus {
+          border-bottom: solid 1px $btnColor;
+          outline: 0;
+          box-shadow: 0 2px 6px -8px rgba($btnColor, 0.45);
+        }
+      }
+      p {
+        margin: 15px 0;
+        font-size: 13px;
+        text-align: right;
+        font-weight: 500;
+        a {
+          color: $btnColor;
+        }
+      }
+      .btn {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 679.98px) {
+    &_container {
+      display: initial;
+      height: inherit;
+    }
+    &_box {
+      flex-direction: column;
+      justify-content: inherit;
+      align-items: inherit;
+      height: 100%;
+      box-shadow: none;
+      overflow: hidden;
+    }
+    &_left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    &_right {
+      padding-bottom: 35px;
+    }
+  }
+}

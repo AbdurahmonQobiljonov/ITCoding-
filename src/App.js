@@ -1,7 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from "./components";
-import { HomeP, Courses, CoursesDetailes, ErrorItem } from "./Pages";
+import {
+  HomeP,
+  Courses,
+  CoursesDetailes,
+  ErrorItem,
+  Register,
+  Login,
+} from "./Pages";
 
 import "./Sass/all.scss";
 import Api from "./server/Api";
@@ -11,23 +18,33 @@ function App() {
 
   React.useEffect(() => {
     const fetch = async () => {
-      await new Api().coursesApi("courses").then(({ data }) => setCorses(data));
+      try {
+        await new Api()
+          .coursesApi("courses")
+          .then(({ data }) => setCorses(data));
+      } catch (error) {
+        console.log(error);
+      }
     };
     return () => {
       fetch();
     };
   }, []);
-  console.log(corses);
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<HomeP corses={corses} />} />
         <Route path="courses" element={<Courses corses={corses} />} />
-        <Route path="courses/course/:id" element={<CoursesDetailes />} />
+        <Route
+          path="courses/course/:id"
+          element={<CoursesDetailes corses={corses} />}
+        />
         <Route path="*" element={<ErrorItem />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

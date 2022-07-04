@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DateConverter from "../Helper/DateConverter";
 import EduCoverter from "../Helper/EduCoverter";
 
@@ -39,11 +40,11 @@ const Edu = ({ corses }) => {
       </div>
 
       <div className="edu_btn">
-        <a href={"courses"}>
+        <Link to="courses">
           <button className="btn btn-outline btn_edu">
             barcha kurslarni ko‘rish <i className="bx bxs-right-arrow-alt" />
           </button>
-        </a>
+        </Link>
       </div>
     </section>
   );
