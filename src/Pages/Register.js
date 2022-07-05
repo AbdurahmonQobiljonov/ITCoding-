@@ -1,18 +1,18 @@
 import React from "react";
-import "cleave.js/dist/addons/cleave-phone.ug";
-import Cleave from "cleave.js/react";
-
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import GreateAuth from "../components/GreateAuth";
+import phoneNumberFormatter from "../Helper/PhoneNumberFormatter";
 
 const Register = () => {
+  const [phoneValue, setPhoneValue] = useState("");
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => console.log({ ...data, phoneValue });
   console.log(errors);
 
   return (
@@ -40,10 +40,14 @@ const Register = () => {
                 })}
               />
 
-              <Cleave
+              <input
                 className="input"
-                placeholder="Phone Number"
-                options={{ phone: true, phoneRegionCode: "ru" }}
+                type="tel"
+                placeholder={"Phone Number"}
+                onChange={(e) =>
+                  setPhoneValue(phoneNumberFormatter(e.target.value))
+                }
+                value={phoneValue}
               />
 
               <input
